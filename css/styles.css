@@ -1,0 +1,59 @@
+/* CSS Styles */
+:focus {
+	outline: 2px dotted #000;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  color: #000;
+  line-height: 1.5;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 120%;
+}
+
+a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+a:active, a:visited {
+  color: #000;
+}
+.container {
+  width: 80rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+/*********** Accordion Styles ***********/
+/* accordion styles */
+.acc-link {
+  display: block;
+	width: 100%;
+	background: #ddd;
+  margin: 0;
+  padding: .5rem .5rem .5rem 1rem;
+}
+.acc-link h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+.acc-heading:hover, .acc-heading:focus {
+	background: #0F016D;
+}
+.open {
+	background: #aaa;
+}
+.accordion {
+	width: 100%;
+	padding: .6rem;
+	background: linear-gradient(#fff, #bbb);
+}
