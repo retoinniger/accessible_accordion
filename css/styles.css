@@ -33,13 +33,21 @@ a:active, a:visited {
   margin: 0 auto;
 }
 /*********** Accordion Styles ***********/
-/* accordion styles */
 .acc-link {
-  display: block;
+  position: relative;
+  display: inline-block;
 	width: 100%;
 	background: #ddd;
   margin: 0;
   padding: .5rem .5rem .5rem 1rem;
+}
+.acc-link::after {
+  content: "\25BC";
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 1rem;
+  transform: translate(-50%, -50%);
 }
 .acc-link h2 {
   margin: 0;
@@ -49,9 +57,13 @@ a:active, a:visited {
 .acc-heading:hover, .acc-heading:focus {
 	background: #0F016D;
 }
-.open {
+.acc-link.open {
 	background: #aaa;
 }
+.acc-link.open::after {
+  ransform: rotateX(180deg);
+}
+
 .accordion {
 	width: 100%;
 	padding: .6rem;
