@@ -1,6 +1,7 @@
 /* CSS Styles */
 :focus {
-	outline: 2px dotted #000;
+  outline: inset 2px dotted #000;
+  overflow: visible;
 }
 * {
 	box-sizing: border-box;
@@ -44,10 +45,10 @@ a:active, a:visited {
 .acc-link::after {
   content: "\25BC";
   position: absolute;
-  z-index: 10;
-  top: 50%;
+  top: 30%;
   right: 1rem;
   transform: translate(-50%, -50%);
+  transform: rotateZ(90deg);
 }
 .acc-link h2 {
   margin: 0;
@@ -61,11 +62,11 @@ a:active, a:visited {
 	background: #aaa;
 }
 .acc-link.open::after {
-  ransform: rotateX(180deg);
+  transform: rotate(0deg);
 }
 
 .accordion {
 	width: 100%;
 	padding: .6rem;
-	background: linear-gradient(#fff, #bbb);
+	background: linear-gradient(#fff, #ddd);
 }
